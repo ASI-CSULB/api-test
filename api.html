@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Example</title>
+  </head>
+  <style>
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid black;
+      width: 50%;
+      border-radius: 20px;
+    }
+
+    .full_name {
+      display: flex;
+      flex-direction: row;
+      align-items: space-between;
+      justify-content: space-between;
+    }
+
+    .underlined {
+      text-decoration: underline;
+    }
+  </style>
+
+  <!-- 
+    TODO:
+    API: https://random-data-api.com/api/v2/users
+    1) get api request from above api
+    2) populate body content to display in HTML
+   -->
+
+  <body>
+    <div class="container">
+      <p id="id" class="underlined"></p>
+      <div class="full_name">
+        <p id="first_name"></p>
+        <p>&nbsp;</p>
+        <p id="last_name"></p>
+      </div>
+      <p id="email"></p>
+    </div>
+  </body>
+</html>
